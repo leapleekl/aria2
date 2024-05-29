@@ -39,11 +39,16 @@ $ git clone https://github.com/leapleekl/aria2.git ~/.config/aria2
 $ cd ~/.config/aria2
 ```
 替换aria2.conf和aria2.service的用户名
-```$ vim aria2.service
+```
+$ vim aria2.service
 
-:%s/lee/<your name>/g```
-```$ vim aria2.conf
-:%s/lee/<your name>/g```
+:%s/lee/<your name>/g
+```
+```
+$ vim aria2.conf
+
+:%s/lee/<your name>/g
+```
 
 把服务移动到systemd
 ```
