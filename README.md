@@ -27,27 +27,45 @@
 本地apache2使用，
 Debian安装aria2,apache2：
 ```
-sudo apt update
-sudo apt install aira2 apache2
+$ sudo apt update
 
+$ sudo apt install aira2 apache2
 ```
 获取aria2配置
 ```
-git clone https://github.com/leapleekl/aria2.git ~/.config/aria2
+$ git clone https://github.com/leapleekl/aria2.git ~/.config/aria2
 
-cd ~/.config/aria2
+$ cd ~/.config/aria2
 ```
 替换aria2.conf和aria2.service的用户名
 
 把服务移动到systemd
 ```
-sudo aria2.service /etc/systemd/system/
+$ sudo aria2.service /etc/systemd/system/
 ```
 启动服务
 ```
-sudo systemctl start aria2.service
-sudo systemctl enable aria2.service
+$ sudo systemctl start aria2.service
+
+$ sudo systemctl enable aria2.service
 ```
+下载[AriaNG](https://github.com/mayswind/AriaNg/releases)
+```
+$ git clone https://github.com/mayswind/AriaNg/releases/download/1.3.7/AriaNg-1.3.7.zip
+
+$ unzip AriaNG-1.3.7.zip -d aria2
+
+$ sudo mv aria2 /var/www/html/
+```
+获取Aria2 RPC Secret Token
+```
+$ cat ~/.config/aria2/aria2.conf | grep secret
+rpc-secret=POSTCARD
+```
+使用浏览器下载[http://ip/aria2](http://localhost/aria2)
+选择`AriaNG Settings` - `RPC` - `Aria2 RPC Secret Token`
+替换成rpc-secret上的密钥
+
 
 ## 文件说明
 
