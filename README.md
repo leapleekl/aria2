@@ -24,7 +24,7 @@
 * 更好的 PT 下载支持
 
 ## 部署方法
-本地apache2使用，
+aria2本地apache2使用， 
 Debian安装aria2,apache2：
 ```
 $ sudo apt update
@@ -62,9 +62,11 @@ $ sudo mv aria2 /var/www/html/
 $ cat ~/.config/aria2/aria2.conf | grep secret
 rpc-secret=POSTCARD
 ```
-使用浏览器下载[http://ip/aria2](http://localhost/aria2)
+浏览器下使用[http://ip/aria2](http://localhost/aria2)
+
 选择`AriaNG Settings` - `RPC` - `Aria2 RPC Secret Token`
 替换成rpc-secret上的密钥
+
 
 
 ## 文件说明
@@ -89,6 +91,7 @@ rpc-secret=POSTCARD
 ## 更新日志
 
 更新推送：[Aria2 Channel](https://t.me/Aria2_Channel)
+
 
 
 <details>
