@@ -24,8 +24,30 @@
 * 更好的 PT 下载支持
 
 ## 部署方法
+本地apache2使用，
+Debian安装aria2,apache2：
+```
+sudo apt update
+sudo apt install aira2 apache2
 
+```
+获取aria2配置
+```
+git clone https://github.com/leapleekl/aria2.git ~/.config/aria2
 
+cd ~/.config/aria2
+```
+替换aria2.conf和aria2.service的用户名
+
+把服务移动到systemd
+```
+sudo aria2.service /etc/systemd/system/
+```
+启动服务
+```
+sudo systemctl start aria2.service
+sudo systemctl enable aria2.service
+```
 
 ## 文件说明
 
