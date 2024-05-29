@@ -1,0 +1,11 @@
+[Unit]
+Description=Aria2c download manager
+After=network.target
+
+[Service]
+User=lee
+Type=forking
+ExecStart=/usr/local/bin/aria2c --conf-path=/home/lee/.config/aria2/aria2.conf -D --dir=/home/lee/Downloads
+
+[Install]
+WantedBy=multi-user.target
