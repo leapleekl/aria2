@@ -4,7 +4,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/P3TERX/aria2.conf.svg?style=flat-square&label=Stars&logo=github)](https://github.com/P3TERX/aria2.conf/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/P3TERX/aria2.conf.svg?style=flat-square&label=Forks&logo=github)](https://github.com/P3TERX/aria2.conf/fork)
 
-一套 Aria2 配置方案，包含了配置文件、附加功能脚本等文件，用于实现 Aria2 功能的增强和扩展，提升 Aria2 的下载速度与使用体验。
+Aria2 配置方案，包含了配置文件、附加功能脚本等文件，提升 Aria2 的下载速度与使用体验。
 
 ## 功能特性
 
@@ -24,7 +24,8 @@
 * 更好的 PT 下载支持
 
 ## 部署方法
-aria2本地apache2使用， 
+aria2本地apache2使用
+
 Debian安装aria2,apache2：
 ```
 $ sudo apt update
