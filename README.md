@@ -90,7 +90,7 @@ rpc-secret=POSTCARD
 
 替换成rpc-secret上的密钥
 
-## 如果想使用突破16线程的魔改`aria2c`，可以使用大佬静态编译的版本[aria2-1.34.tar.gz](https://www.moerats.com/usr/down/aria2c.tar.gz),来自博客[Rat‘s Blog](https://www.moerats.com/archives/800/)
+如果想使用突破16线程的魔改`aria2c`，可以使用大佬静态编译的版本，下载[aria2-1.34.tar.gz](https://www.moerats.com/usr/down/aria2c.tar.gz),来自博客[Rat‘s Blog](https://www.moerats.com/archives/800/)
 ```
 $ wget https://www.moerats.com/usr/down/aria2c.tar.gz
 $ tar zxvf aria2c.tar.gz && rm -rf aria2c.tar.gz
