@@ -26,7 +26,7 @@ Aria2 配置方案，包含了配置文件、附加功能脚本等文件，提�
 ## 部署方法
 aria2本地apache2使用
 
-Debian安装aria2,apache2：
+Debian apt源安装`aria2`,`apache2`：
 ```
 $ sudo apt update
 
@@ -41,13 +41,9 @@ $ cd ~/.config/aria2
 替换aria2.conf和aria2.service的用户名
 --注：如果你是自己打包的aria2c,你需要把aria2.service中的
 
-`/usr/bin/aria2c`
+`/usr/bin/aria2c`替换成`/usr/local/bin/aria2c`
 
-替换成
-
-`/usr/local/bin/aria2c`
-
-或你aria2c的安装位置，如果你不清楚请查询：
+或你`aria2c`的安装位置，如果你不清楚请查询：
 ```
 $ which aria2c
 ```
@@ -93,6 +89,24 @@ rpc-secret=POSTCARD
 `AriaNG Settings` - `RPC` - `Aria2 RPC Secret Token`
 
 替换成rpc-secret上的密钥
+
+## 如果想使用突破16线程的魔改`aria2c`，可以使用大佬静态编译的版本[aria2-1.34.tar.gz](https://www.moerats.com/usr/down/aria2c.tar.gz),来自博客[Rat‘s Blog](https://www.moerats.com/archives/800/)
+```
+$ wget https://www.moerats.com/usr/down/aria2c.tar.gz
+$ tar zxvf aria2c.tar.gz && rm -rf aria2c.tar.gz
+$ sudo mv -f aria2c /usr/bin/
+$ chmod +x /usr/bin/aria2c
+```
+修改`aria2.conf`的参数
+```
+#修改3个参数即可
+设置最大的JSON-RPC/XML-RPC请求大小，默认2M
+rpc-max-request-size=100M
+同一服务器连接数, 添加时可指定, 默认:1
+max-connection-per-server=64
+单个任务最大线程数, 添加时可指定, 默认:5
+split=128
+```
 
 
 
