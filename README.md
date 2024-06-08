@@ -40,12 +40,16 @@ $ cd ~/.config/aria2
 ```
 替换aria2.conf和aria2.service的用户名
 --注：如果你是自己打包的aria2c,你需要把aria2.service中的
+
 `/usr/bin/aria2c`
+
 替换成
+
 `/usr/local/bin/aria2c`
+
 或你aria2c的安装位置，如果你不清楚请查询：
 ```
-which aria2c
+$ which aria2c
 ```
 ##修改用户名
 ```
