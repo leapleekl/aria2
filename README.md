@@ -30,7 +30,7 @@ Debian apt源安装`aria2`,`apache2`：
 ```
 $ sudo apt update
 
-$ sudo apt install aira2 apache2
+$ sudo apt install aira2 apache2 git wget
 ```
 获取aria2配置
 ```
@@ -71,7 +71,7 @@ $ sudo systemctl enable aria2.service
 ```
 下载[AriaNG](https://github.com/mayswind/AriaNg/releases)
 ```
-$ git clone https://github.com/mayswind/AriaNg/releases/download/1.3.7/AriaNg-1.3.7.zip
+$ wget https://github.com/mayswind/AriaNg/releases/download/1.3.7/AriaNg-1.3.7.zip
 
 $ unzip AriaNG-1.3.7.zip -d aria2
 
