@@ -71,9 +71,9 @@ $ sudo systemctl enable aria2.service
 ```
 下载[AriaNG](https://github.com/mayswind/AriaNg/releases)
 ```
-$ wget https://github.com/mayswind/AriaNg/releases/download/1.3.7/AriaNg-1.3.7.zip
+$ wget https://github.com/mayswind/AriaNg/releases/download/1.3.11/AriaNg-1.3.11-AllInOne.zip
 
-$ unzip AriaNG-1.3.7.zip -d aria2
+$ unzip AriaNg-1.3.11-AllInOne.zip -d aria2 && rm -rf AriaNg-1.3.11-AllInOne.zip
 
 $ sudo mv aria2 /var/www/html/
 ```
